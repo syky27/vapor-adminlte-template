@@ -1,0 +1,84 @@
+#set("navibar") { 
+    <a href="/" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>Q</b></span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>Queue</b>Crud</span>
+    </a>
+    <header>
+        <nav class="navbar navbar-static-top" role="navigation">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu pull-left">
+                <ul class="nav navbar-nav">
+                    <!-- =================================================== -->
+                    <!-- ========== Top menu items (ordered left) ========== -->
+                    <!-- =================================================== -->
+                    
+                    <!-- <li><a href="/"><i class="fa fa-home"></i> <span>Home</span></a></li> -->
+                    
+                    <!-- ========== End of top menu left items ========== -->
+                </ul>
+            </div>
+            
+            
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- ========================================================= -->
+                    <!-- ========== Top menu right items (ordered left) ========== -->
+                    <!-- ========================================================= -->
+                    
+                    <li><a href="/"><i class="fa fa-home"></i> <span>Home</span></a></li> 
+                    
+                    <li><a href="/admin/login"> Login </a></li>
+                    <li><a href="/admin/register"> Register </a></li>
+                    
+                    <li>
+                        <a href="/logout"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        <i class="fa fa-btn fa-sign-out"></i> Log Out
+                    </a>
+                    
+                    <form id="logout-form" action="/logout" method="POST" style="display: none;">
+                        
+                    </form>
+                </li>
+                
+                <!-- ========== End of top menu right items ========== -->
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Left side column. contains the sidebar -->
+<aside class="main-sidebar">
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="https://placehold.it/160x160/00a65a/ffffff/&text=SWVC" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>Queue</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+        </div>
+        
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li class="header"> Administration </li>
+            
+            <li><a href="/"><i class="fa fa-dashboard"></i> <span> Dashboard </span></a></li>
+            
+        </ul>
+    </section>
+</aside>
+
+}
+
+#embed("admin/layouts/layout")

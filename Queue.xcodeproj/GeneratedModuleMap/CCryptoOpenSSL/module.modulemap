@@ -1,0 +1,4 @@
+module CCryptoOpenSSL {
+    umbrella "/Users/syky/lab/queue/.build/checkouts/crypto.git-5228839801540048783/Sources/CCryptoOpenSSL/include"
+    export *
+}
