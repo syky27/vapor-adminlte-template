@@ -11,11 +11,7 @@ public func configure(
     try services.register(FluentPostgreSQLProvider())
     try services.register(LeafProvider())
     try services.register(AuthenticationProvider())
-    services.register { container -> LeafTagConfig in
-        var config = LeafTagConfig.default()
-        config.use(Raw(), as: "raw")   // #raw(<myVar>) to print it as raw html in leaf vars
-        return config
-    }
+    
 
 
     let router = EngineRouter.default()
@@ -46,5 +42,11 @@ public func configure(
 
     config.prefer(LeafRenderer.self, for: ViewRenderer.self)
     config.prefer(MemoryKeyedCache.self, for: KeyedCache.self)
+
+    services.register { container -> LeafTagConfig in
+        var config = LeafTagConfig.default()
+        config.use(Raw(), as: "raw")   // #raw(<myVar>) to print it as raw html in leaf vars
+        return config
+    }
 }
 
