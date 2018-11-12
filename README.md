@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://cloud.githubusercontent.com/assets/1977704/25426816/a9d40530-2a70-11e7-9758-8a0da6341035.png" width="320" alt="SWVCrud Vapor AdminLTE Template">
+    <img src="https://cloud.githubusercontent.com/assets/1977704/25426816/a9d40530-2a70-11e7-9758-8a0da6341035.png" width="320" alt="Vapor AdminLTE Template">
     <br>
     <br>
     <a href="https://docs.vapor.codes/2.0/getting-started/toolbox/#templates">
@@ -19,5 +19,7 @@
     </a>
 </p>
 
-# SWVCrud
-### AdminLte example for Vapor ( Web Framework for Swift )
+# Vapor AdminLTE Template
+
+
+ Inspired here: https://github.com/iMokhles/SWVCrud sorry for this not beeing a fork
